@@ -245,10 +245,25 @@ radio.onReceivedString(function (receivedString) {
         }
     }
     led.unplot(4, 0)
-    templistvariable = [currenticon, currentApp]
     basic.clearScreen()
     basic.pause(100)
     basic.showString(receivedString)
+    if (currentApp == 0) {
+        if (currenticon == 1) {
+            setIcon(icon1)
+        } else if (currenticon == 2) {
+            setIcon(icon2)
+        } else if (currenticon == 3) {
+            setIcon(icon3)
+        } else if (currenticon == 4) {
+            setIcon(icon4)
+        } else if (currenticon == 5) {
+            setIcon(icon5)
+        } else if (currenticon == 6) {
+            setIcon(icon6)
+        }
+    }
+    applicationInit(currentApp)
 })
 function spawn () {
     obstacles.push([4, 4])
@@ -825,7 +840,6 @@ let b = 0
 let a = 0
 let lol = 0
 let level = 0
-let templistvariable: number[] = []
 let messages_read = 0
 let pieces: number[][][] = []
 let px = 0
