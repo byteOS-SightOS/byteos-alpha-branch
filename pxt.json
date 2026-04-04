@@ -1,0 +1,33 @@
+{
+    "name": "byteOS-alpha-branch",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "radio-broadcast": "*",
+        "audio-recording": "*",
+        "datalogger": "*",
+        "Wait Until Custom Blocks": "github:teacherpinky/wait-until-blocks#v0.1.12",
+        "power": "github:microbit-foundation/pxt-microbit-v2-power#v0.2.7",
+        "pxt-morse": "github:bsiever/pxt-morse#v2.0.1",
+        "RB-TFT1.8": "github:joy-it/pxt-rb-tft1.8#1.0.6"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "8.0.21",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
